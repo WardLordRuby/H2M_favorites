@@ -60,10 +60,10 @@ pub(crate) mod continent {
     use super::ContCode;
 
     pub(crate) const COUNT: usize = 4;
-    pub(crate) const NA_CODE: [ContCode; 1] = [[b'N', b'A']];
-    pub(crate) const SA_CODE: [ContCode; 1] = [[b'S', b'A']];
-    pub(crate) const EU_CODES: [ContCode; 2] = [[b'E', b'U'], [b'A', b'F']];
-    pub(crate) const APAC_CODES: [ContCode; 2] = [[b'A', b'S'], [b'O', b'C']];
+    pub(crate) const NA_CODE: [ContCode; 1] = [*b"NA"];
+    pub(crate) const SA_CODE: [ContCode; 1] = [*b"SA"];
+    pub(crate) const EU_CODES: [ContCode; 2] = [*b"EU", *b"AF"];
+    pub(crate) const APAC_CODES: [ContCode; 2] = [*b"AS", *b"OC"];
 }
 
 fn serialize_json_ips(
